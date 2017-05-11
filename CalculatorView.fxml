@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.CalculatorViewController">
+   <children>
+      <SplitPane dividerPositions="0.22073578595317725" orientation="VERTICAL" prefHeight="600.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane fx:id="Pane_display" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <GridPane fx:id="display" gridLinesVisible="true" prefHeight="128.0" prefWidth="398.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="lab_result" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="389.0" text="0" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="lab_enter" alignment="CENTER_RIGHT" prefHeight="65.0" prefWidth="398.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="Pane_buttton" minHeight="0.0" minWidth="0.0" prefHeight="461.0" prefWidth="398.0">
+               <children>
+                  <Button fx:id="but_4" layoutY="92.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text="4">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_6" layoutX="160.0" layoutY="92.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text="6">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_5" layoutX="80.0" layoutY="92.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text="5">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_7" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text="7">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_MODE" layoutY="369.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="240.0" text="Basic">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_DEL" layoutX="240.0" layoutY="369.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="160.0" text="Del">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_CLEAR" layoutX="320.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="80.0" text="C">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_00" layoutX="320.0" layoutY="185.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="80.0" text="00">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_MUL" layoutX="240.0" layoutY="92.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text="x">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_9" layoutX="160.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text="9">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_8" layoutX="80.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text="8">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_DIV" layoutX="240.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text="÷">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_1" layoutY="185.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text="1">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_3" layoutX="160.0" layoutY="185.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text="3">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_2" layoutX="80.0" layoutY="185.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text="2">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_SUB" layoutX="240.0" layoutY="185.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text="-">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_0" layoutY="277.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="160.0" text="0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_ADD" layoutX="240.0" layoutY="277.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text="+">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="but_POINT" layoutX="160.0" layoutY="277.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="80.0" text=".">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
